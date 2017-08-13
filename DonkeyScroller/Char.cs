@@ -1,7 +1,7 @@
 ﻿namespace JaniPellikka.Windows.Forms
 {
     /// <summary>
-    /// Represents a sincle char in the view
+    /// Represents a single char in the view
     /// </summary>
     internal class Char
     {
