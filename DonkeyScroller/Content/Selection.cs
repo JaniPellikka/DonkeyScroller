@@ -1,4 +1,4 @@
-﻿namespace JaniPellikka.Windows.Forms
+﻿namespace JaniPellikka.Windows.Forms.Content
 {
     /// <summary>
     /// Holds information about selection in the chat view
@@ -36,7 +36,7 @@
         /// </summary>
         /// <param name="row">Row index</param>
         /// <param name="column">Column index</param>
-        /// <returns></returns>
+        /// <returns>True if inside the selection</returns>
         public bool Inside(int row, int column)
         {
             return Inside(new RowColumn { Row = row, Column = column });
@@ -45,7 +45,7 @@
         /// Checks whether or not row and column is within the selection
         /// </summary>
         /// <param name="rowColumn">The row and column</param>
-        /// <returns></returns>
+        /// <returns>True if inside the selection</returns>
         public bool Inside(RowColumn rowColumn)
         {
             if (rowColumn.Row == Start.Row && rowColumn.Row == End.Row) // same row

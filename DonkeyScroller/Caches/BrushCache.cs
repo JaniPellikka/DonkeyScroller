@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
 
-namespace JaniPellikka.Windows.Forms
+namespace JaniPellikka.Windows.Forms.Caches
 {
     /// <summary>
     /// Cache for colored Brushes
@@ -15,8 +15,8 @@ namespace JaniPellikka.Windows.Forms
         /// <summary>
         /// Gets a Brush based on color. If this color has been fetched before, we get one from the cache
         /// </summary>
-        /// <param name="color"></param>
-        /// <returns></returns>
+        /// <param name="color">The color for the brush</param>
+        /// <returns>Brush based on <paramref name="color"/></returns>
         public Brush Get(Color color)
         {
             if (!_brushDictionary.ContainsKey(color))

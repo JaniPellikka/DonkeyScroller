@@ -1,23 +1,24 @@
-﻿namespace JaniPellikka.Windows.Forms
+﻿namespace JaniPellikka.Windows.Forms.Interactive
 {
     /// <summary>
-    /// Segment of an interactive text
+    /// Interactive text
     /// </summary>
-    internal class InteractiveSegment
+    public sealed class InteractiveText
     {
         /// <summary>
         /// Index of the start
         /// </summary>
-        public int CharStart { get; private set; }
+        internal readonly int CharStart;
+
         /// <summary>
         /// Index of the end
         /// </summary>
-        public int CharEnd { get; private set; }
+        internal readonly int CharEnd;
 
         /// <summary>
-        /// Id of the interactive text
+        /// Data of the interactive text
         /// </summary>
-        public readonly string Id;
+        public readonly string Data;
         /// <summary>
         /// Text to display for the interactive text
         /// </summary>
@@ -27,14 +28,19 @@
         /// </summary>
         /// <param name="charStart">Start index of the interactive text</param>
         /// <param name="charEnd">End index of the interactive text</param>
-        /// <param name="id">Id of the interactive text</param>
+        /// <param name="data">Data of the interactive text</param>
         /// <param name="text">The text to display for the interavtive text</param>
-        public InteractiveSegment(int charStart, int charEnd, string id, string text)
+        internal InteractiveText(int charStart, int charEnd, string data, string text)
         {
             CharStart = charStart;
             CharEnd = charEnd;
-            Id = id;
+            Data = data;
             Text = text;
+        }
+
+        private InteractiveText()
+        {
+            // Prevent creation outside of this assembly
         }
     }
 }

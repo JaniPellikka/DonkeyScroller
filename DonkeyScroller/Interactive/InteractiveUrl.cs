@@ -1,18 +1,18 @@
-﻿namespace JaniPellikka.Windows.Forms
+﻿namespace JaniPellikka.Windows.Forms.Interactive
 {
     /// <summary>
-    /// Segment for URL
+    /// Interactive URL
     /// </summary>
-    internal class UrlSegment
+    public sealed class InteractiveUrl
     {
         /// <summary>
         /// Start index of line
         /// </summary>
-        public readonly int CharStart;
+        internal readonly int CharStart;
         /// <summary>
         /// End index of line
         /// </summary>
-        public readonly int CharEnd;
+        internal readonly int CharEnd;
         /// <summary>
         /// The URL
         /// </summary>
@@ -23,11 +23,16 @@
         /// <param name="charStart">Start index of line</param>
         /// <param name="charEnd">End index of line</param>
         /// <param name="url">The URL</param>
-        public UrlSegment(int charStart, int charEnd, string url)
+        internal InteractiveUrl(int charStart, int charEnd, string url)
         {
             CharStart = charStart;
             CharEnd = charEnd;
             Url = url;
+        }
+
+        private InteractiveUrl()
+        {
+            // Prevent creation outside of this assembly
         }
     }
 }

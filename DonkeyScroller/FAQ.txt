@@ -1,0 +1,71 @@
+﻿    _________   ____ 
+   / ____/   | / __ \
+  / /_  / /| |/ / / /
+ / __/ / ___ / /_/ / 
+/_/   /_/  |_\___\_\ 
+                     
+~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+
+Q: 
+DonkeyScroller... what?
+
+A: 
+Years ago, I started writing a IRC client in Visual Basic. To my aid I had the source code
+for Visual IRC written in Delphi/Pascal. Among its controls was MonkeyScroller, the chat view.
+I simply based my control on theirs and called it IrcChatView for years to come.
+Now with this rewrite, I call it DonkeyScroller because I think it sounds funny.
+
+Q:
+So, it is a clone of MonkeyScroller?
+
+A:
+Yes and no. My early ports were quite similar, albeit broken in most aspects. 
+I've written the control from scratch so many times in many different languages 
+and it has evolved to something different, but has it's roots in MonkeyScroller.
+
+Q:
+Can you add feature XYZ?
+
+A:
+Maybe, pitch me your idea.
+
+Q:
+Can you add support for emojis?
+
+A:
+Thats what you got ASCII smileys for ;-)
+In all seriousness, this would require a massive rewrite of the rendering and text selection code
+and I'm not to keen on that.
+
+Q:
+Can I add images to the view?
+
+A:
+As with emojis, there would be too much code to rewrite.
+You can however add a "icon" for lines that appears to the left of the text
+
+Q:
+I found a bug, what can I do?
+
+A:
+If you wrote a fix for it, I can have a look at it.
+If you just found the bug but want me to look at it, please describe as detailed as possible, perhaps a write a small demo application?
+
+Q:
+I wrote some new features for DonkeyScroller, want them?
+
+A:
+Maybe, depends on what kind of features, pitch me your features.
+
+Q:
+What license applies to DonkeyScroller?
+
+A:
+MIT License, https://opensource.org/licenses/MIT
+
+Q:
+My question is not answered here, what now?
+
+A:
+Send me an email with your question.
+Right of the bat though, I will NOT write code for you, I will NOT help you with your application.
